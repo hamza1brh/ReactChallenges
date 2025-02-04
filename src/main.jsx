@@ -3,16 +3,16 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 
-import TextInput from "./TextInput.jsx";
-import VideoPlayer from "./VideoPlayer.jsx";
+import ClickOutside from "./ClickOutside.jsx";
+import ExpandingTextarea from "./ExpandingTextArea.jsx";
 import FieldNotes from "./FieldNotes.jsx";
+import FollowTheLeader from "./FollowTheLeader.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
     ##############################
-    <TextInput />
-    <VideoPlayer />
-    <FieldNotes />
+    <FollowTheLeader />
+    <ExpandingTextarea />
   </StrictMode>
 );
