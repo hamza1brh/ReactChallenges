@@ -1,0 +1,23 @@
+commit f6e8773ac62ff44e6d1820361a15703202ccf72b
+Author: bruce <hamzabarhrhouj@gmail.com>
+Date:   Tue Feb 4 16:53:52 2025 +0100
+
+    box following cursor on click exercise
+
+commit da5b4cc2d2e66f5814892383e0bf8ebdb2e0aa8d
+Author: bruce <hamzabarhrhouj@gmail.com>
+Date:   Tue Feb 4 16:47:18 2025 +0100
+
+    box following cursor on click exercise
+
+commit 2d785582dbf8252d1a344dfbfd49396c47dab8ed
+Author: bruce <hamzabarhrhouj@gmail.com>
+Date:   Sun Dec 29 20:52:20 2024 +0100
+
+    field notes challenge
+
+commit aeb239da4b351782b2d2a900575cf0cac97b8613
+Author: bruce <hamzabarhrhouj@gmail.com>
+Date:   Sun Dec 29 19:50:39 2024 +0100
+
+    useRef and useEffect
