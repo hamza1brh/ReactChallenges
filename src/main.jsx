@@ -7,12 +7,13 @@ import ClickOutside from "./ClickOutside.jsx";
 import ExpandingTextarea from "./ExpandingTextArea.jsx";
 import FieldNotes from "./FieldNotes.jsx";
 import FollowTheLeader from "./FollowTheLeader.jsx";
+import ContextApp from "./Context/ContextApp.jsx";
+import LanguageChange from "./translation/LanguageChange.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
     ##############################
-    <FollowTheLeader />
-    <ExpandingTextarea />
+    <LanguageChange />
   </StrictMode>
 );
