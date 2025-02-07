@@ -8,7 +8,7 @@ export default function ClickOutside() {
   };
 
   const handleCloseModal = () => {
-    setIsOpen(false)
+    setIsOpen(false);
   };
 
   return (

@@ -1,33 +1,47 @@
-const tabContext = React.createContext({
+import { useContext, createContext, useState } from "react";
+
+const tabContext = createContext({
   activeTabValue: null,
   setActiveTabValue: () => {},
 });
 
-function TabProvider() {
-  return null;
+function TabProvider({ defaultValue, children }) {
+  const [activeTabValue, setActiveTabValue] = useState(defaultValue);
+
+  return (
+    <tabContext.Provider value={{ activeTabValue, setActiveTabValue }}>
+      {children}
+    </tabContext.Provider>
+  );
 }
 
-function TabTrigger({ value }) {
-  const activeTabValue = null;
-  const setActiveTabValue = () => {};
+function TabTrigger({ value, children }) {
+  const { activeTabValue, setActiveTabValue } = useContext(tabContext);
 
-  const handleSetActiveTabValue = () => {};
+  const handleSetActiveTabValue = () => {
+    setActiveTabValue(value);
+  };
 
   return (
     <button
-      onClick={handleSetActiveTabValue}  
+      onClick={handleSetActiveTabValue}
       className={`tab ${activeTabValue === value ? "active" : ""}`}
     >
-      TODO
+      {children}
     </button>
   );
 }
 
-function TabContent() {
-  return null;
+function TabContent({ children, value }) {
+  const { activeTabValue } = useContext(tabContext);
+  if (activeTabValue !== value) {
+    return null;
+  }
+
+  return children;
 }
 
-export default function App() {
+export default function Tabs() {
   return (
     <section>
       <h1>Tabs</h1>
